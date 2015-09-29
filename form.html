@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form_HTML5</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+		form {
+			width: 40%;
+		}
+		fieldset,input {
+			border-radius: 8px;
+		}
+
+		legend, p {
+			font-family: Verdana;
+		}
+
+		p {
+			text-align: left;
+		}
+
+		.button{
+			padding: 10px 20px;
+		}
+
+		p:last-child{
+			text-align: center;
+		}
+
+		.button:hover {
+			text-decoration: underline;
+			color: olive;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<form action="#">
+		<fieldset>
+			<legend>Вхід на сайт</legend>
+			<p>Нікнейм: 
+				<input name="name" required placeholder="Згадуй швидше!" size="20" maxlength="20" autofocus>
+			</p>
+			<p>Е-адреса: 
+				<input name="email" type="email" size="20" maxlength="20">
+			</p>
+			<p>Пароль: 
+				<input name="pass" required type="password" size="20" maxlength="20">
+			</p>
+			<p>
+				<input name="remember_pass" type="checkbox" value="Remember my password" checked>зберегти пароль 
+			</p>
+			<p>
+				<input type="submit" class="button" name="submit" value="Вхід">
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>
